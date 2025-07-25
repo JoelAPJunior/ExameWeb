@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoTasks 🌱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>EcoTasks 🌿</h1>
+    <p>Gerencie suas tarefas e acompanhe sua pegada de carbono diária.</p>
+  </header>
+
+<div id="login">
+  <h2>Entrar no EcoTasks</h2>
+  <input type="text" id="usuario" placeholder="Digite seu nome" />
+  <button onclick="logar()">Entrar</button>
+</div>
+
+  <main style="display: none;">
+    <section id="formulario">
+      <h2>Nova Tarefa</h2>
+      <form id="tarefaForm">
+        <input type="text" id="nome" placeholder="Nome da tarefa" required />
+        <select id="categoria" required>
+          <option value="">Selecione a categoria</option>
+          <option>Ir de carro</option>
+          <option>Plantar uma árvore</option>
+          <option>Reunião online</option>
+          <option>Usar bicicleta</option>
+          <option>Comer carne vermelha</option>
+          <option>Reciclar lixo</option>
+          <option>Tomar banho longo</option>
+          <option>Economizar energia</option>
+          <option>Viajar de avião</option>
+        </select>
+        <input type="date" id="data" required />
+        <textarea id="descricao" placeholder="Descrição da tarefa"></textarea>
+        <button type="submit">Adicionar Tarefa</button>
+      </form>
+    </section>
+
+    <section id="lista">
+      <h2>Tarefas do Dia</h2>
+      <div id="tarefas"></div>
+      <p id="totalCO2"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌍 EcoTasks – Projeto Educacional IFRO</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
